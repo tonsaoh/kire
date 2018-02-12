@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
+    h2{
+        color: red;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<body>
+
+<h2>Team Health Check Application</h2>
+
+<div>
+    <form action="/action_page.php">
+        <label for="fname"><b>Име на тимот</b></label>
+        <input type="text" id="fname" name="tim" placeholder="Името на тимот...">
+
+        <label for="lname"><b>Член на тимот</b></label>
+        <input type="text" id="lname" name="clen" placeholder="Член на тимот...">
+
+
+        <label>Дали како индивидуа добивате доволно помош од тимот?</label><br>
+
+        <form>
+
+            <input type="radio" name="dalikakoindividua" value="1"> 1
+
+            <input type="radio" name="dalikakoindividua" value="2"> 2
+
+            <input type="radio" name="dalikakoindividua" value="3"> 3
+
+            <input type="radio" name="dalikakoindividua" value="4"> 4
+
+            <input type="radio" name="dalikakoindividua" value="5" checked> 5
+
+        </form><br>
+
+        <label>Дали си задоволен со работата на тимот?</label><br>
+
+        <form>
+
+            <input type="radio" name="dalisizadovolen" value="1"> 1
+
+            <input type="radio" name="dalisizadovolen" value="2"> 2
+
+            <input type="radio" name="dalisizadovolen" value="3"> 3
+
+            <input type="radio" name="dalisizadovolen" value="4"> 4
+
+            <input type="radio" name="dalisizadovolen" value="5" checked> 5
+
+        </form><br>
+
+        <label>Дали ја разбираш мисијата на тимот?</label><br>
+
+        <form>
+
+            <input type="radio" name="dalimisija" value="1"> 1
+
+            <input type="radio" name="dalimisija" value="2"> 2
+
+            <input type="radio" name="dalimisija" value="3"> 3
+
+            <input type="radio" name="dalimisija" value="4"> 4
+
+            <input type="radio" name="dalimisija" value="5" checked> 5
+
+        </form><br>
+
+        <label>Дали тимот има добри процеси?</label><br>
+
+        <form>
+
+            <input type="radio" name="daliprocesi" value="1"> 1
+
+            <input type="radio" name="daliprocesi" value="2"> 2
+
+            <input type="radio" name="daliprocesi" value="3"> 3
+
+            <input type="radio" name="daliprocesi" value="4"> 4
+
+            <input type="radio" name="daliprocesi" value="5" checked> 5
+
+        </form><br>
+
+        <label>Дали има почит меѓу колегите?</label><br>
+
+        <form>
+
+            <input type="radio" name="dalipocit" value="1"> 1
+
+            <input type="radio" name="dalipocit" value="2"> 2
+
+            <input type="radio" name="dalipocit" value="3"> 3
+
+            <input type="radio" name="dalipocit" value="4"> 4
+
+            <input type="radio" name="dalipocit" value="5" checked> 5
+
+        </form><br>
+
+
+        <br>
+        <label for="amin"><b>Одговорен член на тимот за пристап</b></label>
+        <input type="text" id="amin" name="amin" placeholder="Одговорен член...">
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
