@@ -16,9 +16,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/anketa.html'));
 });
 
-app.get('/goodbye', function(req, res){
-  res.send('Goodbye World')
-})
+//app.get('/goodbye', function(req, res){
+//  res.send('Goodbye World')
+//})
 
 // app.get('/test_mysql_connection', function(req,res){
 //   connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
@@ -30,4 +30,5 @@ app.get('/goodbye', function(req, res){
 //   });
 // })
  
+
 app.listen(8081)
