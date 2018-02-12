@@ -2,7 +2,7 @@ var express = require('express')
 // var mysql = require('mysql');
 
 var app = express()
-
+var path=require('path');
 // var connection = mysql.createConnection({
 //   host: 'localhost',
 //   user: 'me',
@@ -13,8 +13,8 @@ var app = express()
 // connection.connect();
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+  res.sendFile(path.join(__dirname + '/anketa.html'));
+});
 
 app.get('/goodbye', function(req, res){
   res.send('Goodbye World')
