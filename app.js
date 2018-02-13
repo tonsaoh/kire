@@ -20,15 +20,15 @@ app.get('/', function (req, res) {
 //  res.send('Goodbye World')
 //})
 
-   app.get('/test_mysql_connection', function(req,res){
-     connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-       if (error){
-         res.statusCode = 500;
-         res.send(error);
-       }
-       res.send(results);
-     });
-   })
+ //  app.get('/test_mysql_connection', function(req,res){
+ //    connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+ //      if (error){
+ //        res.statusCode = 500;
+ //        res.send(error);
+ //      }
+ //      res.send(results);
+ //    });
+ //  })
  
 
 app.listen(8081)
