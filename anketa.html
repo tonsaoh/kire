@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+</head>
 <style>
     input[type=text], select {
         width: 100%;
@@ -41,10 +44,10 @@
 <h2>Team Health Check Application</h2>
 
 <div>
-    <form action="/action_page.php">
+    <form action="send_post.php" method="post">
 
         <label for="fname"><b>Име на тимот</b></label>
-        <select id="fname" name="Име на тимот">
+        <select id="fname" name="ime_na_timot">
             <option value="t1">ТИМ 1</option>
             <option value="t2">ТИМ 2</option>
             <option value="t3">ТИМ 3</option>
@@ -52,7 +55,7 @@
 
 
         <label for="lname"><b>Член на тимот</b></label>
-        <select id="lname" name="Член на тимот">
+        <select id="lname" name="clen_na_timot">
             <option value="C1">Член 1</option>
             <option value="C2">Член 2</option>
             <option value="C3">Член 3</option>
@@ -61,7 +64,7 @@
 
         <label><b>Дали како индивидуа добивате доволно помош од тимот?</b></label><br>
 
-        <form>
+        <form action="send_post.php" method="post">
 
             <input type="radio" name="dalikakoindividua" value="1"> 1
 
@@ -75,9 +78,9 @@
 
         </form><br>
 
-            <label><b>Дали си задоволен со работата на тимот?</b></label><br>
+        <label><b>Дали си задоволен со работата на тимот?</b></label><br>
 
-        <form>
+        <form action="send_post.php" method="post">
 
             <input type="radio" name="dalisizadovolen" value="1"> 1
 
@@ -89,11 +92,11 @@
 
             <input type="radio" name="dalisizadovolen" value="5" checked> 5
 
-        </form><br>
+        </form action="send_post.php" method="post"><br>
 
-            <label><b>Дали ја разбираш мисијата на тимот?</b></label><br>
+        <label><b>Дали ја разбираш мисијата на тимот?</b></label><br>
 
-        <form>
+        <form action="send_post.php" method="post">
 
             <input type="radio" name="dalimisija" value="1"> 1
 
@@ -107,9 +110,9 @@
 
         </form><br>
 
-            <label><b>Дали тимот има добри процеси?</b></label><br>
+        <label><b>Дали тимот има добри процеси?</b></label><br>
 
-        <form>
+        <form action="send_post.php" method="post">
 
             <input type="radio" name="daliprocesi" value="1"> 1
 
@@ -123,9 +126,9 @@
 
         </form><br>
 
-            <label><b>Дали има почит меѓу колегите?</b></label><br>
+        <label><b>Дали има почит меѓу колегите?</b></label><br>
 
-        <form>
+        <form action="send_post.php" method="post">
 
             <input type="radio" name="dalipocit" value="1"> 1
 
@@ -141,7 +144,7 @@
 
 
         <label for="amin"><b>Одговорен член на тимот за пристап</b></label>
-        <select id="amin" name="Одговорен член на тимот за пристап">
+        <select id="amin" name="odgovoren_clen_za_pristap">
             <option value="C1">Член 1</option>
             <option value="C2">Член 2</option>
             <option value="C3">Член 3</option>
