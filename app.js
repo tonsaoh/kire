@@ -13,7 +13,7 @@ var app = express()
 // connection.connect();
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/anketa.html'));
+  res.sendFile(path.join(__kire + '/anketa.html'));
 });
 
 app.get('/hello', function (req, res) {
