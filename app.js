@@ -3,12 +3,12 @@ var mysql = require('mysql');
 
 var app = express()
 var path=require('path');
-var connection = mysql.createConnection({
-     host: 'http://default-environment.bmuifanhu3.eu-central-1.elasticbeanstalk.com/',
-     user: 'databaza1',
-     password: 'databaza1',
-     database: 'databaza'
-   });
+//var connection = mysql.createConnection({
+  //   host: 'http://default-environment.bmuifanhu3.eu-central-1.elasticbeanstalk.com/',
+    // user: 'databaza1',
+     //password: 'databaza1',
+     //database: 'databaza'
+   //});
 
    connection.connect();
 
