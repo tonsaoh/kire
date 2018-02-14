@@ -2,7 +2,7 @@ var express = require('express')
 // var mysql = require('mysql');
 
 var app = express()
- var url = 'http://default-environment.bmuifanhu3.eu-central-1.elasticbeanstalk.com/';
+var path = require("path");
 // var connection = mysql.createConnection({
 //   host: 'localhost',
 //   user: 'me',
