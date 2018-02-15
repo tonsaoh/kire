@@ -5,35 +5,31 @@
 </head>
 <style>
     input[type=text], select {
-        width: 20%;
+        width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 12px;
         box-sizing: border-box;
         background-color: #1AEDF7;
     }
-
     h2{
         color: #1AEDF7;
     }
-
     input[type=submit] {
-        width: 26%;
+        width: 100%;
         background-color:#1AEDF7;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
-        border-radius: 4px;
+        border-radius: 10px;
         cursor: pointer;
     }
-
     input[type=submit]:hover {
         background-color: #45a049;
     }
-
     div {
         border-radius: 5px;
         background-color: #f2f2f2;
@@ -42,12 +38,20 @@
     input[id=mesec]{
         width: 20%;
     }
-    
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+       
     
 </style>
 <body>
 
-<h2>TEAM 4 FINKI ILT 2018</h2>
+<img src="picture1_2.png" /><br>
 
 <div>
     <form action="send_post.php" method="post">
@@ -67,7 +71,6 @@
             <option value="C3">Тонса</option>
             <option value="C4">Кире</option>
         </select><br><br>
-
 
         <label><b>Дали како индивидуа добивате доволно помош од тимот?</b></label><br>
 
@@ -158,7 +161,7 @@
             <option value="C4">Кире</option>
         </select><br><br>
         
-        <label for="meseci"><b>Избери месец</b></label>
+        <label for="	i"><b>Избери месец</b></label>
         <select id="mesec" name="meseci vo godinata">
             <option value="C1">јануари</option>
             <option value="C2">февруари</option>
